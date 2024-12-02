@@ -1,0 +1,192 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black;  /* Full page background set to black */
+    color: #fff;  /* Text color set to white */
+    display: flex;
+    flex-direction: column; /* Ensure the content is stacked vertically */
+    justify-content: flex-start;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Logo Section */
+#logos {
+    background-color: black;
+    padding: 10px 0;
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    width: 100%;
+}
+
+#logos .text-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: orange;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Main Content Section */
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px; /* 20px gap between form and info section */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+/* Form Section */
+.form-container {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 45%; /* Form takes up 45% of the width */
+    box-sizing: border-box; /* Prevents content from overflowing */
+    margin-right: 10px; /* Reduce gap between form and info section */
+}
+
+.form-container h2 {
+    font-size: 22px;
+    margin-top: 0;
+    color: orange;
+}
+
+.form-container label {
+    display: block;
+    margin: 8px 0 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-container input[type="text"], 
+.form-container input[type="email"] {
+    width: 90%; /* Set the input width to 90% of the form container */
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures padding doesn’t push the form out */
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-container button:hover {
+    background-color: darkorange;
+}
+
+/* Information Section */
+.info-text {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 45%; /* Info section takes up 45% of the width */
+    box-sizing: border-box;
+    margin-left: 10px; /* Reduce gap between info section and form */
+}
+
+.info-text h2 {
+    font-size: 22px;
+    margin-top: 0;
+    color: orange;
+}
+
+.info-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 8px 0;
+    color: black; /* Text in black */
+}
+
+/* Footer Section */
+footer {
+    background-color: black;  /* Footer background set to black */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-left {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-left .btc-logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-left a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #main-content {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        gap: 0;
+        padding: 10px;
+    }
+
+    .form-container, .info-text {
+        width: 100%; /* Take up full width on mobile */
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
+
